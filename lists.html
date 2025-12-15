@@ -101,6 +101,22 @@
       max-height: 80vh;
       overflow-y: auto;
     }
+    .language-switch {
+      margin-bottom: 10px;
+    }
+
+    .language-switch button {
+      background: #f4f6fb;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      margin: 0 5px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .language-switch button:hover {
+      background: #e0e4f1;
+    }
 
   </style>
 </head>
@@ -250,35 +266,65 @@
   <!-- ORGANIZER MODAL -->
   <div id="organizer" class="modal">
     <div class="modal-content">
-      <h2>Ibrohim M.</h2>
+      <div class="language-switch">
+        <button onclick="switchLang('en', this)">EN</button>
+        <button onclick="switchLang('ru', this)">RU</button>
+      </div>
 
-      <p><strong>Organizer</strong></p>
+      <div class="en">
+        <h2>Ibrohim M.</h2>
 
-      <p>
-      The organizer of this event is a well-mannered, responsible, and highly
-      respected individual. He is known for his calm mindset, leadership skills,
-      and ability to bring people together in a positive environment.
-      </p>
+        <p><strong>Organizer</strong></p>
 
-      <p>
-      As the main organizer, he carefully planned every detail of the event,
-      ensuring comfort, respect, and a welcoming atmosphere for all guests.
-      </p>
+        <p>
+        The organizer of this event is a well-mannered, responsible, and highly
+        respected individual. He is known for his calm mindset, leadership skills,
+        and ability to bring people together in a positive environment.
+        </p>
 
-      <ul>
-        <li>Strong leadership qualities</li>
-        <li>Well-educated and disciplined</li>
-        <li>Creates a positive and respectful environment</li>
-      </ul>
+        <p>
+        As the main organizer, he carefully planned every detail of the event,
+        ensuring comfort, respect, and a welcoming atmosphere for all guests.
+        </p>
 
-      <p><strong>Phone:</strong>174174174</p>
-      <a href="#" class="close">Close</a>
+        <ul>
+          <li>Strong leadership qualities</li>
+          <li>Well-educated and disciplined</li>
+          <li>Creates a positive and respectful environment</li>
+        </ul>
+
+        <p><strong>Phone:</strong>174174174</p>
+        </div>
+        <div class="ru" style="display:none;">
+          <h2>Иброхим М.</h2>
+
+            <p><strong>Организатор</strong></p>
+
+            <p>
+            Иброхим — воспитанный, ответственный и уважаемый человек, известный своим спокойным нравом и умением объединять людей в дружелюбной и позитивной атмосфере.
+            </p>
+
+            <p>
+            Как главный организатор мероприятий, он тщательно продумывает каждую деталь, чтобы все гости чувствовали себя комфортно и гостеприимно.
+            </p>
+
+            <p>
+            Иброхим отличается сильными лидерскими качествами, дисциплиной и способностью создавать атмосферу уважения и взаимопонимания.
+            </p>
+
+            <p><strong>Телефон:</strong> 174174174</p>
+
+        </div>
+        <a href="#" class="close">Close</a>
+      </div>
     </div>
-  </div>
+  
+  <script src="js/language-switch.js"></script>
 
 </body>
 
 </html>
+
 
 
 
